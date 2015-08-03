@@ -128,7 +128,7 @@ int maxBroadcastUsers() {
 }
 
 - (BOOL)canBeOnline {
-    return ([[NSApplication sharedApplication] isActive] && SystemIdleTime() < 30 );
+    return true;
 }
 
 - (void)setAccountOffline:(BOOL)force {
